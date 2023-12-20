@@ -1,10 +1,10 @@
 import React from "react";
 
 import { Button, Img, Line, List, Text } from "components";
-import LandingPageOneColumn from "components/LandingPageOneColumn";
-import LandingPageOneColumnEleven from "components/LandingPageOneColumnEleven";
-import LandingPageOneColumnTwelve from "components/LandingPageOneColumnTwelve";
-import LandingPageOneMockupsweb from "components/LandingPageOneMockupsweb";
+import LandingPageOneColumn from "components/LandingPageOneColumn/Index";
+import LandingPageOneColumnEleven from "components/LandingPageOneColumnEleven/Index";
+import LandingPageOneColumnTwelve from "components/LandingPageOneColumnTwelve/Index";
+import LandingPageOneMockupsweb from "components/LandingPageOneMockupsweb/Index";
 
 const LandingpageOnePage = () => {
   return (

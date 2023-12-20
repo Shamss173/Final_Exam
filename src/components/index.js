@@ -1,5 +1,5 @@
-export { Button } from "./Button";
-export { Img } from "./Img";
-export { Line } from "./Line";
-export { List } from "./List";
-export { Text } from "./Text";
+export { Button } from "./Button/Index";
+export { Img } from "./Img/Index";
+export { Line } from "./Line/Index";
+export { List } from "./List/Index";
+export { Text } from "./Text/Index";
