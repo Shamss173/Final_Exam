@@ -1,52 +1,37 @@
 import React from "react";
 
-import { Button, Img, Text } from "components";
+import { Img, Text } from "components";
 
 const LandingPageOneColumnTwelve = (props) => {
   return (
     <>
       <div className={props.className}>
-        <div className="bg-blue_gray-50 flex flex-col items-center justify-start p-[19px] rounded-[5px] w-full">
-          <div className="flex flex-col items-start justify-start mb-[9px] w-[95%] md:w-full">
+        <div className="bg-gray-50 flex flex-col items-center justify-start p-[18px] rounded-[5px] w-full">
+          <div className="flex flex-col items-start justify-start mb-12 w-[95%] md:w-full">
             <div className="flex flex-row items-start justify-between w-full">
               <Text
-                className="mb-1.5 text-[22px] text-blue_gray-900 sm:text-lg md:text-xl tracking-[-0.55px]"
-                size="txtInterSemiBold22"
+                className="text-[22px] text-blue_gray-900 sm:text-lg md:text-xl tracking-[-0.55px]"
+                size="txtInterSemiBold22Bluegray900"
               >
-                {props?.newstext}
+                {props?.totalsales}
               </Text>
               <Img
-                className="h-[22px] mt-[11px] w-[22px]"
-                src="images/img_bookmark.svg"
-                alt="bookmark"
+                className="h-[23px] mt-[3px] w-[23px]"
+                src="images/img_arrowleft_blue_gray_50.svg"
+                alt="arrowleft"
               />
             </div>
-            <Img
-              className="h-[162px] sm:h-auto mt-[18px] object-cover rounded w-[99%] md:w-full"
-              src="images/img_rectangle52.png"
-              alt="rectangleFiftyTwo"
-            />
             <Text
-              className="leading-[26.00px] mt-3.5 text-blue_gray-900 text-lg tracking-[-0.30px] w-[99%] sm:w-full"
+              className="leading-[26.00px] mt-3 text-blue_gray-900 text-lg tracking-[-0.30px] w-[68%] sm:w-full"
               size="txtInterRegular18"
             >
-              {props?.createscreenstext}
+              {props?.checkouteachcolOne}
             </Text>
-            <Button
-              className="cursor-pointer flex items-center justify-center min-w-[140px] mt-[13px] rounded-[5px]"
-              rightIcon={
-                <div className="mt-[3px] mb-0.5 ml-[13px] bg-white-A700">
-                  <Img src="images/img_arrowleft.svg" alt="arrow_left" />
-                </div>
-              }
-              color="purple_800"
-              size="sm"
-              variant="fill"
-            >
-              <div className="!text-white-A700 font-inter font-semibold leading-[normal] text-[11.66px] text-right tracking-[-0.29px]">
-                {props?.readmorebutton}
-              </div>
-            </Button>
+            <Img
+              className="h-[145px] ml-8 md:ml-[0] mt-[73px]"
+              src="images/img_activ.svg"
+              alt="activ"
+            />
           </div>
         </div>
       </div>
@@ -55,9 +40,8 @@ const LandingPageOneColumnTwelve = (props) => {
 };
 
 LandingPageOneColumnTwelve.defaultProps = {
-  newstext: "Daily News",
-  createscreenstext:
-    "Create screens directly in Method or add your images from Sketch…",
+  totalsales: "Total Sales",
+  checkouteachcolOne: "Check out each collumn for more details",
 };
 
 export default LandingPageOneColumnTwelve;

@@ -11,21 +11,21 @@ const LandingPageOneColumn = (props) => {
             <div className="flex flex-row items-start justify-between ml-0.5 md:ml-[0] w-[99%] md:w-full">
               <Text
                 className="text-[22px] text-blue_gray-900 sm:text-lg md:text-xl tracking-[-0.55px]"
-                size="txtInterSemiBold22"
+                size="txtInterSemiBold22Bluegray900"
               >
-                {props?.activitytext}
+                {props?.activity}
               </Text>
               <Img
                 className="h-[23px] mt-0.5 w-[23px]"
                 alt="arrowleft"
-                src={props?.arrowleftimage}
+                src={props?.arrowleft}
               />
             </div>
             <Text
               className="leading-[26.00px] ml-0.5 md:ml-[0] mt-[11px] text-blue_gray-900 text-lg tracking-[-0.30px] w-[67%] sm:w-full"
               size="txtInterRegular18"
             >
-              {props?.checkouttext}
+              {props?.checkouteachcolOne}
             </Text>
             <div className="h-[163px] md:h-[179px] ml-0.5 md:ml-[0] mt-[17px] relative w-[97%]">
               <div className="absolute bottom-[0] md:h-[150px] h-[152px] inset-x-[0] mx-auto w-full">
@@ -41,7 +41,7 @@ const LandingPageOneColumn = (props) => {
               <Img
                 className="absolute h-[162px] inset-[0] justify-center m-auto object-cover rounded w-full"
                 alt="rectangleFiftyFour"
-                src={props?.rectanglefiftyfourimage}
+                src={props?.rectanglefiftyfour}
               />
             </div>
             <div className="flex flex-row gap-[55px] items-center justify-start mt-[18px] w-[72%] md:w-full">
@@ -56,7 +56,7 @@ const LandingPageOneColumn = (props) => {
                     className="md:ml-[0] ml-[30px] text-base text-blue_gray-900 tracking-[-0.40px]"
                     size="txtInterSemiBold16Bluegray900"
                   >
-                    {props?.totalsalestext}
+                    {props?.totalsales}
                   </Text>
                   <Img
                     className="h-[22px] w-[22px]"
@@ -76,7 +76,7 @@ const LandingPageOneColumn = (props) => {
                     className="md:ml-[0] ml-[30px] text-base text-blue_gray-900 tracking-[-0.40px]"
                     size="txtInterSemiBold16Bluegray900"
                   >
-                    {props?.profittext}
+                    {props?.profit}
                   </Text>
                   <Img
                     className="h-[22px] w-[22px]"
@@ -94,11 +94,11 @@ const LandingPageOneColumn = (props) => {
 };
 
 LandingPageOneColumn.defaultProps = {
-  activitytext: "Activity",
-  arrowleftimage: "images/img_arrowleft_blue_gray_50.svg",
-  checkouttext: "Check out each collumn for more details",
-  totalsalestext: "Total Sales",
-  profittext: "Profit",
+  activity: "Activity",
+  arrowleft: "images/img_arrowleft_blue_gray_50.svg",
+  checkouteachcolOne: "Check out each collumn for more details",
+  totalsales: "Total Sales",
+  profit: "Profit",
 };
 
 export default LandingPageOneColumn;
